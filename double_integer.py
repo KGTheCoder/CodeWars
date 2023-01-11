@@ -1,4 +1,4 @@
 def double_integer(i):
-  pass
+  return i*2
 
 print(double_integer(2))
