@@ -9,9 +9,13 @@ def odd_or_even(arr):
 
   # return 'even' if sum(arr) % 2 == 0 else 'odd'
 
+  """
   if sum(arr) % 2 == 0:
     return 'even'
   else:
     return 'odd'
+  """
+
+  return ('even', 'odd')[sum(arr) % 2]
 
 print(odd_or_even([0, 1, 2, 3, 4, 5]))
