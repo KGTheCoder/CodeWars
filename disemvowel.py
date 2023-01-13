@@ -1,9 +1,18 @@
-def disemvowel(string_):
+def disemvowel(text):
   """
   for i in "aeiouAEIOU":
-    string_ = string_.replace(i, "")
-  return string_
+    text = text.replace(i, "")
+  return text
   """
-  return "".join(c for c in string_ if c.lower() not in "aeiou")
+
+  # return "".join(c for c in text if c.lower() not in "aeiou")
+
+  vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"]
+  res = ""
+  for i in text:
+    if not i in vowels:
+      res += i
+  return res
+
 
 print(disemvowel("This website is for losers LOL!"))
