@@ -18,6 +18,7 @@ def shades_of_grey(n):
   return my_list
   """
 
-  
+  n = min(n, 254)
+  return ['#'+format(i, '02x')*3 for i in range(1, n+1)]
 
-print(shades_of_grey(200))
+print(shades_of_grey(2))
