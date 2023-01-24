@@ -1,3 +1,6 @@
+def last_element(word):
+  return word[-1]
+
 def last(s):
   """
   res = s.split()
@@ -6,6 +9,7 @@ def last(s):
 
   # return sorted(s.split(), key=lambda x: x[-1])
 
+  """
   a = s.split()
   last_char = []
   i = 0
@@ -15,5 +19,9 @@ def last(s):
   last_char = sorted(last_char)
   output = [word for char, i, word in last_char]
   return output
+  """
+
+  return sorted(s.split(), key=last_element)
+
 
 print(last("man i need a taxi up to ubud"))
