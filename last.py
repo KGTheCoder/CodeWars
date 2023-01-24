@@ -1,5 +1,7 @@
+"""
 def last_element(word):
   return word[-1]
+"""
 
 def last(s):
   """
@@ -21,7 +23,16 @@ def last(s):
   return output
   """
 
-  return sorted(s.split(), key=last_element)
+  # return sorted(s.split(), key=last_element)
+
+  letters = "abcdefghijklmnopqrstuvwxyz"
+  result = []
+  for letter in letters:
+    for word in s.split(" "):
+      if word[-1] == letter:
+        result.append(word)
+  return result
+
 
 
 print(last("man i need a taxi up to ubud"))
