@@ -17,6 +17,6 @@ def square_digits(num):
   ans = ''
   for n in num:
     ans += str(int(n)**2)
-  return ans
+  return int(ans)
 
 print(square_digits(9119))
