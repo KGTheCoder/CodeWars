@@ -8,7 +8,12 @@ def is_isogram(string):
   return True
   """
 
-  return len(string) == len(set(string.lower()))
+  # return len(string) == len(set(string.lower()))
+
+  string = string.lower()
+  for letter in string:
+    if string.count(letter) > 1: return False
+  return True
 
 
-print(is_isogram('moOse'))
+print(is_isogram('moseo'))
