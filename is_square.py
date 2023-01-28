@@ -9,7 +9,7 @@ def is_square(n):
     return False
   """
 
-  return n > -1 and math.sqrt(n) % 1 == 0
+  # return n > -1 and math.sqrt(n) % 1 == 0
 
 
-print(is_square(-1))
+print(is_square(25))
