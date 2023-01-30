@@ -10,7 +10,8 @@ def divisible_by_three(st):
 
   while len(st) != 1:
     st = str(sum(int(n) for n in st))
+    print(st)
   return int(st) in [0, 3, 6, 9]
 
 
-print(divisible_by_three('123'))
+print(divisible_by_three('19254'))
