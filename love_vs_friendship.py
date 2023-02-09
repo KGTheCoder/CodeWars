@@ -1,4 +1,5 @@
 def words_to_marks(s):
+  '''
   letters = {
     'a': 1,
     'b': 2,
@@ -30,6 +31,8 @@ def words_to_marks(s):
 
   for i in s:
     return sum(letters.values(i))
+  '''
 
+  return sum(ord(c)-96 for c in s)
 
 print(words_to_marks('attitude'))
