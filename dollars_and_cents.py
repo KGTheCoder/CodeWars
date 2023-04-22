@@ -1,4 +1,7 @@
 def format_money(amount):
-  return "${:.2f}".format(amount)
+  # print("$",amount)
+  return '${:.2f}'.format(amount)
 
-print(format_money(3.1))
+format_money2 = lambda x: '${:.2f}'.format(x)
+
+print(format_money(3))
